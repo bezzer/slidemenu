@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Slide Menu</title>
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+		<link rel="stylesheet" href="slidemenu.css">
+	</head>
+	<body>
+		<div class="navigation">
+			<ul class="navigation-list">
+				<li class="item"><a href="javascript:;" class="link">Link 1</a></li>
+				<li class="item"><a href="javascript:;" class="link">Link 2</a></li>
+				<li class="item"><a href="javascript:;" class="link">Link 3</a></li>
+			</ul>
+		</div>
+		<div class="navigation-header slide">
+			<button class="menu-button btn btn-primary btn-lg" title="menu"><i class="fa fa-bars"> Menu</i></button>
+		</div>
+		<div class="window slide">
+			<div class="jumbotron space-top">
+				<div class="container">
+					<h1>Slide menu</h1>
+					<p>A simple slide menu that is optimised for mobile devices</p>
+					<p><a class="btn btn-primary btn-lg" role="button" href="https://github.com/bezzer/slidemenu">Learn more</a></p>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<h1>Slide menu example</h1>
+						<p>Lorem ipsum dolorer sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
+						<h2>Heading</h2>
+						<p>Lorem ipsum dolorer sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script>
+			// Initalise the menu button
+			$(".menu-button").on("click", function () {
+				// Toggle the menu open class on the body to trigger the menu display navigation
+				$("body").toggleClass("menu-open");
+			});
+
+			// Close menu on window click
+			$(".window").on("click", function () {
+				$("body").removeClass("menu-open");
+			});
+		</script>
+	</body>
+</html>

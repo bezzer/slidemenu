@@ -16,10 +16,10 @@ The classes needed for the navigation menu to work are "window", "navigation" an
                 <li>Item three</li>
             </ul>
         </div>
-        <div class="navigation-header">
-            <a class="menu-button" href="javascript:$('body').toggleClass('menu-open');">Open menu</a>
+        <div class="navigation-header slide">
+            <a href="javascript:$('body').toggleClass('menu-open');">Open menu</a>
         </div>
-        <div class="window">
+        <div class="window slide">
             <!--Content goes here -->
         </div>
     </body>
