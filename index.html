@@ -26,7 +26,7 @@
     </div>
 
     <!-- HEADER -->
-    <div id="header_wrap" class="outer slide">
+    <div id="header_wrap" class="outer slide space-top">
         <header class="inner">
           <a id="forkme_banner" href="https://github.com/bezzer/slidemenu">View on GitHub</a>
 
@@ -81,7 +81,19 @@
         </footer>
       </div>
     </div>
-    
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script>
+      // Initalise the menu button
+      $(".menu-button").on("click", function () {
+        // Toggle the menu open class on the body to trigger the menu display navigation
+        $("body").toggleClass("menu-open");
+      });
+
+      // Close menu on window click
+      $(".window").on("click", function () {
+        $("body").removeClass("menu-open");
+      });
+    </script>
 
   </body>
 </html>
