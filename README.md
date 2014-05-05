@@ -3,6 +3,8 @@ Slide Menu
 
 A CSS based animated menu optimized for mobile devices
 
+[View the demo](http://bezzer.github.io/slidemenu)
+
 Structure
 ---------
 
